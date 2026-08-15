@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Smallville — generative agents</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <h1>🏘️ Smallville</h1>
+  <div class="meta">
+    <span id="clock" class="clock">Day 1 · 08:00</span>
+    <span id="status" class="status">connecting…</span>
+  </div>
+</header>
+
+<main class="layout">
+  <section class="map-wrap">
+    <div id="map" class="map"></div>
+    <div id="tooltip" class="tooltip hidden"></div>
+  </section>
+
+  <aside class="side">
+    <div class="panel feed-panel">
+      <h2>Town chatter</h2>
+      <ul id="feed" class="feed"></ul>
+    </div>
+    <div class="panel agent-panel">
+      <h2>Resident</h2>
+      <div id="agent-detail" class="agent-detail">
+        <p class="hint">Click a resident on the map to inspect them.</p>
+      </div>
+    </div>
+  </aside>
+</main>
+
+<script src="app.js"></script>
+</body>
+</html>
